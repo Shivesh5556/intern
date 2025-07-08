@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AR Ruler - Camera View</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <h1>📏 AR Ruler - Camera View</h1>
+
+  <div class="container">
+    <div class="button-group">
+      <button id="startCamera">📷 Start Camera</button>
+      <button id="stopCamera">🛑 Stop Camera</button>
+      <button id="clearLines">🧹 Clear Lines</button>
+      <button id="toggleTheme">🌓 Toggle Theme</button>
+    </div>
+
+    <div class="video-container">
+      <video id="webcamFeed" autoplay playsinline></video>
+      <canvas id="overlayCanvas"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
